@@ -1,0 +1,74 @@
+<div class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input type="text" class="searchbar" placeholder="Search a city" [(ngModel)]="cityName" name="city">
+  </form>
+</div>
+
+<div class="container">
+  <div class="upper">
+    @if (weatherData.current.temp_c < 15){
+      <img src="../assets/cold.png" alt="">
+    }
+    @else {
+      <img src="../assets/hot.png" alt="">
+    }
+    <div class="weather-data">
+      <div class="location">{{weatherData.location.name}}</div>
+      <div class="temperature">{{ weatherData.current.temp_c | number: '1.0-0' }}°C</div>
+      <div class="inf">{{ weatherData.current.condition.text }}</div>
+    </div>
+  </div>
+  <div class="lower">
+    <div class="more-info-label">
+      More Information
+    </div>
+
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+
+          <img class="min-img" src="../assets/colds.png" alt="">
+          <span>feels like</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.current.feelslike_c }}°C
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+
+          <img src="../assets/hots.png" alt="">
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.current.cloud }}°C 
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="info-block-label">
+
+          <img src="../assets/humidity.png" alt="">
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.current.humidity }}%
+        </div>
+      </div>  
+
+      <div class="info-block">
+        <div class="info-block-label">
+
+          <img src="../assets/wind.png" alt="">
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          {{ weatherData.current.wind_kph }}km/h
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
