@@ -1,13 +1,13 @@
 # WeatherApp
 A simple, responsive weather app using Angular & WeatherAPI for real-time forecasts.
 
-🚀 Features
-✅ Search for any city’s weather
-✅ Real-time temperature, humidity, and wind data
-
-🛠️ Technologies Used
-Angular – Frontend framework
-[WeatherAPI.com] (https://www.weatherapi.com/) – Weather data source
+🚀 Features<br>
+✅ Search for any city’s weather<br>
+✅ Real-time temperature, humidity, and wind data<br>
+<br>
+🛠️ Technologies Used<br>
+Angular – Frontend framework<br>
+[WeatherAPI.com] (https://www.weatherapi.com/) – Weather data source<br>
 
 🎥 Credits 
 I learned and built this project by following Youtube video:
