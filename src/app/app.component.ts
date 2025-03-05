@@ -20,10 +20,7 @@ export class AppComponent implements OnInit {
   url = `http://api.weatherapi.com/v1/current.json`;
   key = 'edc58c599c964155b5605017250503';
   
-
   constructor(private weatherService: WeatherService) {}
-
-
   ngOnInit(): void {
     this.getWeatherData(this.cityName);
     this.cityName = "";
