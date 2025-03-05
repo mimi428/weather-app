@@ -9,11 +9,11 @@ A simple, responsive weather app using Angular & WeatherAPI for real-time foreca
 Angular – Frontend framework<br>
 [WeatherAPI.com] (https://www.weatherapi.com/) – Weather data source<br>
 
-🎥 Credits 
-I learned and built this project by following Youtube video:
+🎥 Credits <br>
+I learned and built this project by following Youtube video:<br>
 https://www.youtube.com/watch?v=psZXU8PTAS8&t=396s
 
-Screenshots
+Screenshots<br><br>
 ![image](https://github.com/user-attachments/assets/2bcca44a-ef3d-46e8-80de-1ecc7ef463e3)
 ![image](https://github.com/user-attachments/assets/18897e94-618f-4068-b4d3-054e137b7e3e)
 
